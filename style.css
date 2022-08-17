@@ -1,0 +1,30 @@
+h1 {
+    font-family: helvetica;
+  }
+  
+body {
+    background-color: rgb(148, 161, 148);    
+    }
+
+  p {
+    color: #7906e4;
+  }
+  
+  section p.more-content {
+    background-color: #475045;
+  }
+  
+  .more-content {
+    background-color: #0000FF;
+  }
+  
+  #something-else {
+    border: 5px dashed #00FF00;
+  }
+
+  html {
+      background-color: aqua;
+      box-sizing: border-box;
+      padding-left: 20px;
+      
+  }
