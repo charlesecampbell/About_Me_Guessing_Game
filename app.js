@@ -98,33 +98,44 @@ break;
 } 
 
 // Question 6.
-let age = prompt('Guess my age?');
-if (typeof (age) === 'number'){
-  for(count = 0; count < 5; count++) {
-    document.write("Current Count : " + count );
-    document.write('All attempts have be exhausted. The correct answer is 55 years old!');
- }         
-}   
-    //In case yes, correct
-switch (age) {
-  case 'age > 56':
-    //   console.log('Too High!');
-  alert('Too High!');
-  break;
+let numberOfGuesses = 6;
+let myFavoriteShows = ['StarTrek', 'Gun Smoke', 'Bull', 'All Rise', 'The Virginian', 'Lost In Space']
+let myFacoriteShows = prompt('What is one of my favorite TV Shows?');
+let isFavorite = false;
+while(numberOfGuess > 0) {
+  for (let show of myFavoriteShows) {
+    if(userShowsGuess.toLowerCase() === show.toLowerCase()) {
+      isFavoriete = true;
+    }
+  }
+}
 
-  case 'age <= 54':
-    //   console.log('Too Low!');
-  alert('Too Low!');
-//   console.log('Too Low!');
+if (isFavorite === false) {
+  alert('That is wrong');
+}
 
-break;
-} 
+if(isFavorite === true) {
+  alert ('Correct');
+}
+  correctAnswers++;
+{
+
+numberOfGuesses -= 1;
+
+if(numberOfGuesses === 0) {
+  alert('You rand out of attempts!')
+}
+userShowsGuess = prompt('What is one of mu favorite TV Shows?');
+}
+alert('Your done! You answered ' + correctAnswers + ' questions correctly');
+
+
 
 // Question 7.
-let question = [];
-let response = [];
+let questions = [];
+let responses = [];
 let answers = [];
-colors['5', '6', '8', '10', '11', '13', '20']
+let colors = ['5', '6', '8', '10', '11', '13', '20']
 let response = prompt(question[0]);
 response.push(response);
 question; //['How many colors are in a rainbow?'];
@@ -155,3 +166,4 @@ let question = prompt('How many colors are in a rainbow?');
                 score=score+1;
                 alert("Number of Correct Answers");
             }
+          }
