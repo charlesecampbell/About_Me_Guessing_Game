@@ -6,7 +6,7 @@ let name = prompt('What is your name?');
 alert('Hello ' + name );
 name = name.toLowerCase();
 //console.log(Name);
-document.write('Greetings ' + name + ', Answer a few yes or no questions about me');
+document.write('Greetings ' + name + ', Welcome to my webpage. Please answer a few yes or no questions about me.');
 
 //Ask Several Questions
 // Question 1. 
@@ -96,3 +96,62 @@ switch (startup) {
 //   console.log('Incorrect answer!');
 break;
 } 
+
+// Question 6.
+let age = prompt('Guess my age?');
+if (typeof (age) === 'number'){
+  for(count = 0; count < 5; count++) {
+    document.write("Current Count : " + count );
+    document.write('All attempts have be exhausted. The correct answer is 55 years old!');
+ }         
+}   
+    //In case yes, correct
+switch (age) {
+  case 'age > 56':
+    //   console.log('Too High!');
+  alert('Too High!');
+  break;
+
+  case 'age <= 54':
+    //   console.log('Too Low!');
+  alert('Too Low!');
+//   console.log('Too Low!');
+
+break;
+} 
+
+// Question 7.
+let question = [];
+let response = [];
+let answers = [];
+colors['5', '6', '8', '10', '11', '13', '20']
+let response = prompt(question[0]);
+response.push(response);
+question; //['How many colors are in a rainbow?'];
+responses; //['5', '6', '8', '10', '11', '13', '20']
+let question = prompt('How many colors are in a rainbow?');
+  for(count = 0; count < 7; count++) {
+    document.write("Current Count : " + count );
+    document.write('All attempts have be exhausted. The correct answers are 5, 6, 8, 10, 11, 13, 20');
+ }         
+
+ function randomAdd()
+        {
+            let x=document.getElementById("Score");
+            x.value=Math.floor((Math.random()*6)+1);
+
+            let y=document.getElementById("Score2");
+            y.value=Math.floor((Math.random()*6)+1);
+        }
+
+        function checkAdd()
+        {
+            var z=document.getElementById("Score2");
+            z.value= parseInt(document.getElementById("Score").value) + parseInt(document.getElementById("Score2").value);
+
+
+            if(parseInt(document.getElementById("Score").value)==z.value)
+            {
+                score=score+1;
+                alert("Number of Correct Answers");
+            }
