@@ -1,5 +1,25 @@
 h1 {
     font-family: helvetica;
+    background-color: rgb(206, 206, 124);
+    font-size: 60;
+    text-align: center;
+    border: 5px;
+    border-style: solid;
+    border-color: rgb(46, 13, 196);
+    margin: 10px auto 10px auto;
+    padding: 40px;
+  }
+
+  h2 {
+    font-family: helvetica;
+    background-color: rgb(148, 138, 142);
+    font-size: 60;
+    text-align: left;
+    border: 2px;
+    border-style: solid;
+    border-color: green;
+    margin: 10px auto 10px auto;
+    padding: 5px;
   }
   
 body {
@@ -7,11 +27,26 @@ body {
     }
 
   p {
-    color: #7906e4;
+    color: hsl(271, 95%, 46%);
   }
   
+  .bio{
+      border: 2px;
+      border-top: 1px;
+      background-color: burlywood;
+      border-style: solid;
+      border-color: darkblue;
+      margin-right: 600px;
+      margin-left: -5px;
+      margin-top: -5px;
+      font-size-adjust: medium;
+      padding: 10px;
+      text-align: left;
+      display: inline-block
+  }
+
   section p.more-content {
-    background-color: #475045;
+    background-color: #67a15a;
   }
   
   .more-content {
@@ -23,7 +58,7 @@ body {
   }
 
   html {
-      background-color: aqua;
+      background-color: rgb(128, 204, 204);
       box-sizing: border-box;
       padding-left: 20px;
       
