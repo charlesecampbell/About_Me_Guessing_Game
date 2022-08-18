@@ -3,10 +3,10 @@
 
 
 let name = prompt('What is your name?');
-alert('Hello ' + Name );
-user = user.toLowerCase();
+alert('Hello ' + name );
+name = name.toLowerCase();
 //console.log(Name);
-document.write('Greetings ' + Name + ', Answer a few yes or no questions about me');
+document.write('Greetings ' + name + ', Answer a few yes or no questions about me');
 
 //Ask Several Questions
 // Question 1. 
